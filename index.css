@@ -169,6 +169,7 @@ footer {
 
 .information-box p {
 	font-size: 0.9rem;
+	line-height: 1.4rem;
 }
 
 footer p {
@@ -177,6 +178,7 @@ footer p {
 
 div.information-box.hide-box {
 	display: none;
+	height: 0;
 }
 
 .information-box-title {
@@ -244,5 +246,9 @@ div.information-box.hide-box {
 	}
 	.job-information button {
 		height: 100px !important;
+	}
+	.job-finances {
+		width: 90%;
+		margin-left: 5%;
 	}
 }
