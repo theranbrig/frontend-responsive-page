@@ -1,0 +1,248 @@
+/* ------------------- Base mediaQueries and widths ------------------- */
+
+@font-face {
+	font-family: firaFont;
+	src: url('./assets/firaSans-webf/FiraSans-Light.woff');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #31353a;
+	max-height: 100vh;
+	font-family: firaFont;
+}
+.maxWidth {
+	max-width: 380px;
+	margin: 0 auto;
+}
+
+/* Small devices (tablets, 768px and up) */
+
+/* Small devices (tablets, up to 768px) */
+
+/* Medium devices (desktops, between 992px and 768px) */
+@media (min-width: 768px) and (max-width: 992px) {
+}
+/* Medium devices (desktops, up to 992px) */
+@media (max-width: 992px) {
+}
+/*  Medium devices (desktops, 992px and up)  */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1104px) {
+	.maxWidth {
+		max-width: 1104px;
+	}
+}
+
+.main-content-area {
+	background: url('./assets/mood.jpg') no-repeat center center fixed;
+	min-height: calc(100vh - 60px);
+	width: 80%;
+	margin-left: 10%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.title-logo {
+	background: #e4e4e4;
+	width: 280px;
+	margin: 20px;
+	padding: 10px;
+}
+
+.title-logo img {
+	margin-left: 10px;
+}
+
+.job-information {
+	margin-left: 20px;
+	width: 85%;
+	display: grid;
+}
+
+.job-header {
+	background: #31353a;
+	color: #e4e4e4;
+	padding: 20px 10px;
+}
+
+.mobile-image {
+	display: none;
+}
+
+.job-data {
+	color: #31353a;
+	background: #e4e4e4;
+	padding: 20px 10px;
+}
+
+.job-data ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.job-data ul h4 i {
+	margin-right: 5px;
+	padding-right: 10px;
+}
+
+.job-data ul h4 {
+	color: #31353a;
+	margin: 10px 0;
+}
+
+.job-information button {
+	display: block;
+	background: #ef7d32;
+	color: #e4e4e4;
+	width: 100%;
+	border-radius: 0;
+	border: none;
+	height: 50px;
+	font-family: firaFont;
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 2px #31353a;
+	letter-spacing: 0.1rem;
+}
+
+.job-information button:hover {
+	font-size: 1.6rem;
+}
+
+.job-finances {
+	width: 60%;
+	margin-left: 20%;
+	text-align: center;
+	display: grid;
+	justify-items: center;
+	align-self: center;
+	grid-template-columns: 40px 1fr;
+}
+
+.job-finances img {
+	justify-self: center;
+	align-self: center;
+}
+
+.job-finances h3 {
+	font-size: 3rem;
+	margin: 0;
+	text-align: left;
+}
+
+.job-finances p {
+	font-size: 1.2rem;
+	margin: 0;
+	text-align: left;
+	text-decoration: line-through;
+}
+
+.job-finances-text {
+	display: inline-block;
+}
+
+footer {
+	height: 30px;
+	text-align: center;
+}
+
+.additional-information {
+	width: 80%;
+	justify-self: end;
+}
+
+.information-box {
+	padding: 10px;
+	background: #e4e4e4d5;
+}
+
+.information-box-title button {
+	justify-content: right;
+	font-size: 1.5rem;
+	border: none;
+	background: transparent;
+}
+
+.information-box p {
+	font-size: 0.9rem;
+}
+
+footer p {
+	color: #e4e4e4;
+}
+
+div.information-box.hide-box {
+	display: none;
+}
+
+.information-box-title {
+	display: flex;
+	justify-content: space-between;
+	justify-items: center;
+}
+
+@media (max-width: 768px) {
+	.main-content-area {
+		margin-left: 0;
+		width: 100%;
+		background: #31353a;
+		grid-template-columns: 1fr;
+		grid-template-rows: 3fr 1fr;
+	}
+
+	.title-logo {
+		background: #e4e4e4;
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 10px 0 !important;
+	}
+	.title-logo img {
+		width: 60%;
+		margin-left: 20% !important;
+	}
+	.job-header h2 {
+		padding: 10px;
+	}
+	.job-header {
+		padding: 0 !important;
+	}
+	img.mobile-image {
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
+	.job-information {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+	.job-finances {
+		width: 70% !important;
+		margin-left: 15% !important;
+		grid-template-columns: 60px 1fr;
+	}
+	.job-information button {
+		height: 80px !important;
+	}
+	.additional-information {
+		width: 100% !important;
+		margin-top: -100px;
+	}
+	.information-box {
+		background: #e4e4e4 !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	.main-content-area {
+		width: 100% !important;
+		margin: 0;
+		height: 120vh;
+	}
+	.job-information button {
+		height: 100px !important;
+	}
+}
